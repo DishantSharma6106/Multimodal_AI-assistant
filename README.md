@@ -55,20 +55,23 @@ Orchestrator (multimodal_turn)
 ```
 Multimodal_AI-assistant/
 │
-├── app.py                 # Streamlit frontend
-├── orchestrator.py        # Main multimodal logic
-├── core.py                # Alternate core flow
-├── vision.py              # YOLO detection + webcam capture
-├── audio_stt.py           # Recording + Whisper STT
-├── llm_client.py          # Local/OpenAI LLM interface
-├── tts_client.py          # Text-to-speech interface
-├── memory.py              # Conversation memory
-├── config.py              # Environment config + .env loader
-├── logging_utils.py       # Logger formatter
-├── requirements.txt       # Python dependencies
-├── .env                   # Local environment variables
-└── yolov8n.pt             # YOLO model weights
-```
+├── assistant/
+│   ├── app.py                  # Streamlit UI
+│   ├── orchestrator.py         # Multimodal pipeline controller
+│   ├── core.py                 # Alternate core logic
+│   ├── vision.py               # YOLOv8 webcam detection
+│   ├── audio_stt.py            # Audio recording + Whisper STT
+│   ├── llm_client.py           # LLM integration (Ollama/OpenAI)
+│   ├── tts_client.py           # Text-to-Speech engine
+│   ├── memory.py               # Conversation memory buffer
+│   ├── logging_utils.py        # Logger configuration
+│   ├── config.py               # Environment variables loader
+│   ├── requirements.txt        # Python dependencies
+│   └── yolov8n.pt              # YOLO model weights
+│
+├── README.md                   # Project documentation
+└── .gitignore                  # Ignored files
+
 
 ---
 
