@@ -1,8 +1,0 @@
-streamlit
-opencv-python
-ultralytics
-sounddevice
-scipy
-python-dotenv
-openai
-pyttsx3
